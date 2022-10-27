@@ -1,38 +1,17 @@
-<p align="center"><img src="https://i.imgur.com/NZfsD1p.png"></p>
+# convergence
 
-## Usage
+A simple electron app that lets you transfer in game settings and bindings between accounts in
+league of legends
 
-### Create an App
+## Install
+Use one of the releases install using the installer or used unpacked files
 
-```
-# with npx
-$ npx create-nextron-app my-app --example with-typescript
+- Export using the button
+- Import previously imported files
+- Drag and drop config files on the app, and it should load in your settings and bindings it should give you
+a notification in league.
 
-# with yarn
-$ yarn create nextron-app my-app --example with-typescript
+## Support
+If you'd like to support me please consider donating below or leaving a ⭐ on the project thanks
 
-# with pnpx
-$ pnpx create-nextron-app my-app --example with-typescript
-```
-
-### Install Dependencies
-
-```
-$ cd my-app
-
-# using yarn or npm
-$ yarn (or `npm install`)
-
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
-
-### Use it
-
-```
-# development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
-
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M31ZRUH)
