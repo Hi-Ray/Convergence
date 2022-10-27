@@ -1,0 +1,142 @@
+$btn_size: 1.25rem
+$indicator_size: 1.5rem
+$transitions_length: 0.15s
+
+%title-btn
+  width: $btn_size
+  height: $btn_size
+  border: 0
+  border-radius: 100vw
+  margin: 0 0.1rem
+  -webkit-app-region: no-drag
+  transition-duration: $transitions_length
+  z-index: 100
+
+  &:active
+    border: 0
+    outline: 0
+
+  &:hover
+    opacity: 0.5
+    transition-duration: 0.15s
+
+%option-btn
+  background: none
+  font-weight: bolder
+  outline: none
+  border: none
+  border-radius: 10px
+  font-family: Sans-Serif, sans-serif
+  color: white
+  cursor: pointer
+  font-size: 1rem
+  transition-duration: $transitions_length
+  padding: 2vh 3vw
+  backdrop-filter: blur(50%)
+
+  &:hover
+    opacity: 0.75
+    transition-duration: $transitions_length
+
+  &:active
+    transition-duration: $transitions_length
+    opacity: 0.5
+
+.bg
+  position: absolute
+  height: 100vh
+  filter: grayscale(50%)
+  left: -75%
+  right: 50%
+  z-index: 0
+  background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(255,0,0,0) 100%)
+
+
+.titlebar
+  width: 100%
+  height: 3.5rem
+  -webkit-app-region: drag
+  display: flex
+  padding: 0.5rem
+
+.close
+  @extend %title-btn
+  background: crimson
+
+.min
+  @extend %title-btn
+  background: orange
+  opacity: 0.5
+
+.max
+  @extend %title-btn
+  background: greenyellow
+  opacity: 0.5
+
+.indicator
+  position: absolute
+  bottom: -$indicator_size
+  right: -$indicator_size
+  padding: $indicator_size
+  border-radius: 100vw
+
+
+.welcome
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 1rem 0
+  z-index: 100
+  font-size: 1.5rem
+  font-weight: bolder
+
+
+.droparea
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+
+.flare
+  width: 100%
+  display: flex
+  justify-content: center
+  padding: 1rem 0
+
+  img
+    filter: invert(100%)
+    width: 50px
+    height: 50px
+    transition-duration: $transitions_length
+    cursor: pointer
+
+    &:hover
+      filter: invert(50%)
+      transition-duration: $transitions_length
+
+    &:active
+      transition-duration: $transitions_length
+      filter: invert(40%)
+
+.export
+  @extend %option-btn
+  position: absolute
+  bottom: 7rem
+
+.previousconfig
+  @extend %option-btn
+  position: absolute
+  bottom: 11rem
+
+.drop
+  width: 50%
+  height: 45%
+  opacity: 0.45
+  filter: invert(100%)
+  z-index: 100
+
+.smaller
+  margin: 1vh 0
+  color: rgba(255,255,255,.5)
+  font-weight: 100
