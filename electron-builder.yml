@@ -1,6 +1,6 @@
-appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+appId: me.hiray.convergence
+productName: Convergence
+copyright: Copyright © 2022 Ray
 directories:
   output: dist
   buildResources: resources

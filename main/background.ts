@@ -28,6 +28,7 @@ if (isProd) {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: __dirname + '/icon.ico'
   });
 
   if (isProd) {
